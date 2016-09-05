@@ -1,0 +1,5 @@
+[user]
+	email = david@strauss.io
+	name = David Strauß
+[core]
+	excludesfile = ~/.gitignore
