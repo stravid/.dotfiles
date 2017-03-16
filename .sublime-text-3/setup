@@ -1,0 +1,7 @@
+#!/bin/sh
+set -x
+
+# Setup Sublime Text 3 by symlinking User settings directory
+sublime_dir=~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+mv "$sublime_dir/User" "$sublime_dir/User.backup"
+ln -s "~/.sublime-text-3/User" "$sublime_dir"
