@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"ApplySyntax",
+		"Elixir",
 		"Handlebars",
 		"Package Control",
 		"SCSS"
