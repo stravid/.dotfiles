@@ -6,6 +6,8 @@
 	"installed_packages":
 	[
 		"ApplySyntax",
+		"Babel",
+		"Better CoffeeScript",
 		"Handlebars",
 		"Package Control",
 		"SCSS"
