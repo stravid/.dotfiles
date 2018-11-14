@@ -1,2 +1,2 @@
-echo "Running update hook"
+echo "Running pre-push hook"
 ~/.update-dotfiles.sh
