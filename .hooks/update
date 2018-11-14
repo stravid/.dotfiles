@@ -1,0 +1,2 @@
+echo "Running update hook"
+~/.update-dotfiles.sh

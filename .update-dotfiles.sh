@@ -25,3 +25,6 @@ if ! [ -L User ]; then
   ln -s ~/.sublime-text-3/User
 fi
 
+# Copy git hooks to enable self updating
+cp ~/.hooks/update ~/.dotfiles/hooks/update
+cp ~/.hooks/post-checkout ~/.dotfiles/hooks/post-checkout
