@@ -19,4 +19,6 @@ dotfiles checkout
 
 dotfiles config status.showUntrackedFiles no
 
+./.update-dotfiles.sh
+
 source .bash_profile
