@@ -26,5 +26,5 @@ if ! [ -L User ]; then
 fi
 
 # Copy git hooks to enable self updating
-cp ~/.hooks/update ~/.dotfiles/hooks/update
+cp ~/.hooks/pre-push ~/.dotfiles/hooks/pre-push
 cp ~/.hooks/post-checkout ~/.dotfiles/hooks/post-checkout
