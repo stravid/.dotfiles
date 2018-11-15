@@ -27,4 +27,4 @@ fi
 
 # Copy git hooks to enable self updating
 cp ~/.hooks/pre-push ~/.dotfiles/hooks/pre-push
-cp ~/.hooks/post-checkout ~/.dotfiles/hooks/post-checkout
+cp ~/.hooks/post-merge ~/.dotfiles/hooks/post-merge
