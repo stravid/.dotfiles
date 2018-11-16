@@ -12,7 +12,7 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   # Linux
 
-  alias sublime='/usr/lib/bin/subl'
+  alias sublime='/usr/bin/subl'
 fi
 
 # Setup projects in tmux
