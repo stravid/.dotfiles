@@ -15,6 +15,8 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   alias sublime='/usr/bin/subl'
 fi
 
+export GOPATH=$HOME/Code/go
+
 # Setup projects in tmux
 
 tmux has-session -t dartboard 2>/dev/null
