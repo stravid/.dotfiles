@@ -47,3 +47,15 @@ if [ "$?" -eq 1 ] ; then
     split-window -h \; \
     send-keys 'cd ~/Code/tedian-frontend && clear' C-m \;
 fi
+
+tmux has-session -t jobaktuell 2>/dev/null
+if [ "$?" -eq 1 ] ; then
+  tmux new-session -D -d -c ~/Code/jobaktuell -s jobaktuell \; \
+    split-window -v \; \
+    send-keys 'cd ~/Code/jobaktuell && clear' C-m \; \
+    split-window -h \; \
+    send-keys 'cd ~/Code/jobaktuell && clear' C-m \; \
+    select-pane -U \; \
+    split-window -h \; \
+    send-keys 'cd ~/Code/jobaktuell && clear' C-m \;
+fi
