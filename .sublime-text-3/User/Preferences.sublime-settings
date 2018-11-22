@@ -10,7 +10,8 @@
 		"dist",
 		"bower_components",
 		"node_modules",
-		"tmp"
+		"tmp",
+		".vagrant"
 	],
 	"font_size": 23,
 	"highlight_line": true,
