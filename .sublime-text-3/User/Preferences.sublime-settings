@@ -22,7 +22,8 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"*.sublime-workspace"
+		"*.sublime-workspace",
+		"*.retry"
 	],
 	"folder_exclude_patterns":
 	[
