@@ -11,9 +11,13 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   alias sublime='/usr/bin/subl'
 fi
 
+load_chruby() {
+  source /usr/local/share/chruby/chruby.sh
+  source /usr/local/share/chruby/auto.sh
+}
+
 # Setup chruby
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+load_chruby
 
 # Setup nvm
 export NVM_DIR="$HOME/.nvm"
