@@ -3,3 +3,5 @@
 	name = David Strauß
 [core]
 	excludesfile = ~/.gitignore
+[pull]
+	rebase = true
