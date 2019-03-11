@@ -37,7 +37,7 @@
 		"tmp",
 		".vagrant"
 	],
-	"font_size": 23,
+	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
 	[
