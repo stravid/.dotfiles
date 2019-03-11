@@ -1,0 +1,13 @@
+#!/bin/bash
+
+REMOTE_URL=$(git remote get-url origin)
+EMAIL=$(git config user.email)
+
+if [[ "$REMOTE_URL" == *gitlab.edgycircle.com* ]] && [[ "$EMAIL" != *@edgycircle.com ]]; then
+  echo "[pre-commit hook] Action canceled."
+  echo "[pre-commit hook] user.email should end with '@edgycircle.com' when working with a remote repository at gitlab.edgycircle.com."
+  echo "[pre-commit hook] Configure for this repository by running: 'git config user.email YOUR_NAME@edgycircle.com'. You could also configure it globally."
+  exit 1
+else
+  exit 0
+fi

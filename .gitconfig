@@ -3,3 +3,7 @@
 	name = David Strauß
 [core]
 	excludesfile = ~/.gitignore
+[pull]
+	rebase = true
+[init]
+	templatedir = ~/.git-templates
