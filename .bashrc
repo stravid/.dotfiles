@@ -26,6 +26,10 @@ export NVM_DIR="$HOME/.nvm"
 
 export GOPATH=$HOME/Code/go
 
+# Setup iTerm
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.iterm"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
 # Setup projects in tmux
 
 tmux has-session -t dartboard 2>/dev/null
