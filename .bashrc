@@ -29,3 +29,7 @@ export GOPATH=$HOME/Code/go
 # Setup iTerm
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.iterm"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
+# bin/mina deploy breaks without this in Kitty
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
