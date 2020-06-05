@@ -4,6 +4,8 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
+KITTY_CONFIG_DIRECTORY=~/.config/kitty
+
 if [ "$(uname)" == "Darwin" ]; then
   # macOS
 
@@ -36,6 +38,17 @@ fi
 
 if ! [ -L default.yml ]; then
   ln -s ~/.espanso-config/default.yml
+fi
+
+# Setup Kitty by symlinking configuration
+cd "$KITTY_CONFIG_DIRECTORY"
+
+if [[ -f kitty.conf && ! -L kitty.conf ]]; then
+  mv kitty.conf kitty.conf.backup
+fi
+
+if ! [ -L kitty.conf ]; then
+  ln -s ~/.kitty-config/kitty.conf
 fi
 
 # Copy git hooks to enable self updating
