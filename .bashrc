@@ -5,6 +5,10 @@ if [ "$(uname)" == "Darwin" ]; then
 
   alias sublime='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
   export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+  # Setup iTerm
+  defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.iterm"
+  defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   # Linux
 
@@ -17,7 +21,9 @@ load_chruby() {
 }
 
 # Setup chruby
-load_chruby
+if [[ -d /usr/local/share/chruby ]]; then
+  load_chruby
+fi
 
 # Setup nvm
 export NVM_DIR="$HOME/.nvm"
@@ -25,10 +31,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 export GOPATH=$HOME/Code/go
-
-# Setup iTerm
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.iterm"
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 # bin/mina deploy breaks without this in Kitty
 export LC_ALL=en_US.UTF-8
