@@ -13,12 +13,19 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   # Linux
 
   alias sublime='/usr/bin/subl'
+
+  export TERM="xterm-kitty"
+  export TERMINFO="$HOME/.local/kitty.app/lib/kitty/terminfo"
+  export LOCALE_ARCHIVE="/usr/lib/locale/locale-archive"
 fi
 
 load_chruby() {
   source /usr/local/share/chruby/chruby.sh
   source /usr/local/share/chruby/auto.sh
 }
+
+# bin/mina deploy breaks without this in Kitty
+export LANG=en_US.UTF-8
 
 # Setup chruby
 if [[ -d /usr/local/share/chruby ]]; then
@@ -31,7 +38,3 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 export GOPATH=$HOME/Code/go
-
-# bin/mina deploy breaks without this in Kitty
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
