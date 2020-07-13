@@ -35,7 +35,8 @@
 		"bower_components",
 		"node_modules",
 		"tmp",
-		".vagrant"
+		".vagrant",
+		".local-data"
 	],
 	"font_size": 16,
 	"highlight_line": true,
