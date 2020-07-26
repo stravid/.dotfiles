@@ -28,6 +28,9 @@ matches:
   - trigger: "U\""
     replace: "Ü"
 
+  - trigger: ":euro"
+    replace: "€"
+
   - trigger: ":date"
     replace: "{{mydate}}"
     vars:
