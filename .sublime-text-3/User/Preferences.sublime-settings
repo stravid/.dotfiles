@@ -38,10 +38,12 @@
 		".vagrant",
 		".local-data"
 	],
-	"font_size": 16,
+	"font_size": 19,
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"Better CoffeeScript",
+		"Flow",
 		"Vintage"
 	],
 	"rulers":
