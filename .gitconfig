@@ -7,3 +7,5 @@
 	rebase = true
 [init]
 	templatedir = ~/.git-templates
+[url "gitlab@gitlab.bifie.at:"]
+	insteadOf = https://gitlab.bifie.at/
