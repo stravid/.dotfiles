@@ -9,6 +9,9 @@ if [ "$(uname)" == "Darwin" ]; then
   # Setup iTerm
   defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.iterm"
   defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
+  export TERM="xterm-kitty"
+  export TERMINFO="/Applications/kitty.app/Contents/Frameworks/kitty/terminfo"
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   # Linux
 
@@ -38,6 +41,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 export GOPATH=$HOME/Code/go
+
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 if [ -e /Users/david/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/david/.nix-profile/etc/profile.d/nix.sh; fi
 if [ -e /home/david/.nix-profile/etc/profile.d/nix.sh ]; then . /home/david/.nix-profile/etc/profile.d/nix.sh; fi
