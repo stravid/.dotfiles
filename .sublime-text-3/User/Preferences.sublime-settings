@@ -38,7 +38,7 @@
 		".vagrant",
 		".local-data"
 	],
-	"font_size": 19,
+	"font_size": 24,
 	"highlight_line": true,
 	"ignored_packages":
 	[
