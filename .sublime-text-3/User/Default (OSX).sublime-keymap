@@ -1,0 +1,23 @@
+[
+  // Character
+  { "keys": ["left"], "command": "move", "args": {"by": "characters", "forward": false} },
+  { "keys": ["right"], "command": "move", "args": {"by": "characters", "forward": true} },
+  { "keys": ["up"], "command": "move", "args": {"by": "lines", "forward": false} },
+  { "keys": ["down"], "command": "move", "args": {"by": "lines", "forward": true} },
+
+  // Sub-word
+  { "keys": ["ctrl+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
+  { "keys": ["ctrl+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+
+  // Word
+  { "keys": ["alt+left"], "command": "move", "args": {"by": "words", "forward": false} },
+  { "keys": ["alt+right"], "command": "move", "args": {"by": "word_ends", "forward": true} },
+
+  // Line
+  { "keys": ["ctrl+alt+left"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+  { "keys": ["ctrl+alt+right"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+
+  // Document
+  { "keys": ["home"], "command": "move_to", "args": {"to": "bof", "extend": false} },
+  { "keys": ["end"], "command": "move_to", "args": {"to": "eof", "extend": false} },
+]
