@@ -14,8 +14,10 @@
   { "keys": ["alt+right"], "command": "move", "args": {"by": "word_ends", "forward": true} },
 
   // Line
-  { "keys": ["ctrl+alt+left"], "command": "move_to", "args": {"to": "bol", "extend": false} },
-  { "keys": ["ctrl+alt+right"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+  { "keys": ["super+left"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+  { "keys": ["super+right"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+  { "keys": ["super+up"], "command": "swap_line_up" },
+  { "keys": ["super+down"], "command": "swap_line_down" },
 
   // Document
   { "keys": ["home"], "command": "move_to", "args": {"to": "bof", "extend": false} },
