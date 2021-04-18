@@ -23,7 +23,8 @@
 		"*.psd",
 		"*.db",
 		"*.sublime-workspace",
-		"*.retry"
+		"*.retry",
+		"*.map"
 	],
 	"folder_exclude_patterns":
 	[
@@ -38,7 +39,7 @@
 		".vagrant",
 		".local-data"
 	],
-	"font_size": 24,
+	"font_size": 14,
 	"highlight_line": true,
 	"ignored_packages":
 	[

@@ -16,7 +16,7 @@
   { "keys": ["super+right"], "command": "move", "args": {"by": "word_ends", "forward": true} },
   { "keys": ["shift+super+left"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
   { "keys": ["shift+super+right"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
-  { "keys": ["super+shift+a"], "command": "expand_selection", "args": {"to": "word"} },
+  { "keys": ["ctrl+k", "s"], "command": "expand_selection", "args": {"to": "word"} },
 
   // Line
   { "keys": ["up"], "command": "move", "args": {"by": "lines", "forward": false} },
@@ -27,7 +27,7 @@
   { "keys": ["alt+right"], "command": "move_to", "args": {"to": "eol", "extend": false} },
   { "keys": ["alt+up"], "command": "swap_line_up" },
   { "keys": ["alt+down"], "command": "swap_line_down" },
-  { "keys": ["alt+shift+a"], "command": "expand_selection", "args": {"to": "line"} },
+  { "keys": ["ctrl+l", "s"], "command": "expand_selection", "args": {"to": "line"} },
 
   // Document
   { "keys": ["home"], "command": "move_to", "args": {"to": "bof", "extend": false} },
