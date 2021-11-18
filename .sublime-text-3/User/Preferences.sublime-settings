@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
+	"color_scheme": "Solarized (light).sublime-color-scheme",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -37,15 +37,17 @@
 		"node_modules",
 		"tmp",
 		".vagrant",
-		".local-data"
+		".local-data",
+		".nix-gems"
 	],
-	"font_size": 14,
+	"font_size": 18,
+	"font_face": "Fira Mono",
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Better CoffeeScript",
 		"Flow",
-		"Vintage"
+		"Vintage",
 	],
 	"rulers":
 	[
@@ -56,5 +58,6 @@
 	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"draw_white_space": ["selection", "leading", "enclosed", "trailing"],
 }

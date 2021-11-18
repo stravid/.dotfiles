@@ -13,8 +13,10 @@
 		"FileManager",
 		"Flow",
 		"Handlebars",
+		"LSP",
 		"Package Control",
 		"SCSS",
-		"TypeScript Syntax"
-	]
+		"Solarized Color Scheme",
+		"TypeScript Syntax",
+	],
 }

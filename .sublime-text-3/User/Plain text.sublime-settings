@@ -1,0 +1,5 @@
+// These settings override both User and Default settings for the Plain text syntax
+{
+  "wrap_width": 50,
+  "draw_centered": true,
+}
